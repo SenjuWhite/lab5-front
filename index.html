@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перевірка форми</title>
+  <style>
+    .error { border: 2px solid red; }
+    .success { border: 2px solid green; }
+  </style>
+</head>
+<body>
+
+  <h2>Форма з перевіркою</h2>
+  <form id="myForm">
+    <label for="fullName">1. ПІБ (формат: ТТТТТТ Т.Т.):</label>
+    <input type="text" id="fullName" placeholder="Скряга Н.О."><br><br>
+
+    <label for="variant">2. Варіант (формат: ЧЧ):</label>
+    <input type="text" id="variant" placeholder="01"><br><br>
+
+    <label for="group">3. Група (формат: ТТ-ЧЧ):</label>
+    <input type="text" id="group" placeholder="ІК-21"><br><br>
+
+    <label for="phone">4. Телефон (формат: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ):</label>
+    <input type="text" id="phone" placeholder="(123)-456-78-90"><br><br>
+
+    <label for="idCard">5. ID-card (формат: ТТ №ЧЧЧЧЧЧ):</label>
+    <input type="text" id="idCard" placeholder="ID №123456"><br><br>
+
+    <button type="button" onclick="validateForm()">Перевірити</button>
+  </form>
+  <a href="second-task.html">перейти до 2 завдання</a>
+  <script src="script.js">
+  </script>
+
+</body>
+</html>
